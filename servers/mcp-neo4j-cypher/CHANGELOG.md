@@ -1,6 +1,7 @@
 ## Next
 
 ### Fixed
+* Default `schema_sample_size` to `1000` when CLI and env are unset so `get_neo4j_schema` does not interpolate `{sample: None}`
 
 ### Changed
 

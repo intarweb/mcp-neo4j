@@ -764,7 +764,7 @@ def test_sample_env_vars(clean_env, args_factory):
 
 def test_sample_defaults(clean_env, args_factory):
     """Test sample defaults when not provided."""
-    assert process_config(args_factory())["schema_sample_size"] is None
+    assert process_config(args_factory())["schema_sample_size"] == 1000
 
 
 def test_sample_cli_overrides_env(clean_env, args_factory):
